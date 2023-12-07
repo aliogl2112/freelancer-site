@@ -1,0 +1,76 @@
+#home{
+    //home intro section
+    &__intro{
+        .skills{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+        i{
+            color: $primary-color;
+        }
+    }
+
+    //home profile section
+    &__profile{
+        .profile{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            div{
+                li{
+                    &.title{
+                        font-size: 1.5rem;
+                    }
+                    &.number{
+                        font-size: 2rem;
+                        font-weight: bold;
+                    }
+                }
+
+                &:nth-child(odd){
+                    background-color: $light-color;
+                }
+                &:nth-child(even){
+                    background-color: $medium-color;
+                }
+            }
+        }
+    }
+
+    //home process section
+    &__process{
+        .processes{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            .process{
+
+                i{
+                    position: relative;
+                    margin-bottom: 15px;
+                    color: $white;
+                    background-color: $dark-color;
+                    border-radius: 50%;
+                    transition: background-color .5s ease;
+                    &:hover{
+                        background-color: $primary-color;
+                    }
+                    .step-number{
+                        position: absolute;
+                        top:-10px;
+                        left: 70px;
+                        font-weight: bold;
+                        font-size: 1.8rem;
+                        color: $white;
+                        background-color: $primary-color;
+                        padding: 4px 12px;
+                        border-radius: 50%;
+                        transition: background-color .5s ease;
+                        &:hover{
+                            background-color: $dark-color;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

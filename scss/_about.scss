@@ -1,0 +1,64 @@
+#about{
+    &-bio{
+        .info{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            &__image{
+                border: 1px solid $light-color;
+                padding: .5rem;
+                border-radius: 3px;
+            }
+            &__bio{
+                border: 1px solid $light-color;
+            }
+        }
+    }
+    &-skills{
+        color: $white;
+        margin-bottom: 50px;
+        .progress{
+            height: 20px;
+            background-color: $medium-color;
+            border-radius: 2rem;
+            margin-bottom: 1rem;
+            div{
+                background-color: $primary-color;
+                height: 100%;
+                border-radius: 2rem;
+            }
+        }
+    }
+    &-references{
+        .references-logos{
+            display: grid;
+            gap: 3rem;
+            align-items: center;
+            grid-template-columns: repeat(4,1fr);
+            img{
+                width: 70%;
+            }
+        }
+    }
+    &-carousel{
+        .references{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            ul{
+                display: flex;
+                margin-bottom: 1rem;
+                align-items: center;
+            }
+            p{
+                border: 1px solid $medium-color;
+                border-radius: 8px;
+                padding: .5rem;
+            }
+            img{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+            }
+        }
+    }
+}

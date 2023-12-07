@@ -1,0 +1,27 @@
+#main-footer{
+    height: 5rem;
+    background-color:$dark-color;
+    color: $white;
+    margin-top: 1rem;
+    .footer-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 5rem;
+
+        .social{
+            i{
+                cursor: pointer;
+                text-align: center;
+                transition: all .5s ease;
+                &:hover{
+                    transform: translateY(-10px);
+                    scale: 1.5;
+                }
+            }
+            i:not(:first-child){
+                margin-left: 1rem;
+            }
+        }
+    }
+}

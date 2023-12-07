@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    background-color:$white;
+    line-height: 1.5;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color:$dark-color;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+.top{
+    position: absolute;
+    padding: .5rem;
+    border-radius: 50%;
+    background-color: $primary-color;
+    bottom: 100px;
+    right: 20px;
+    color: $white;
+    opacity: .7;
+    transition: all .3s ease;
+    &:hover{
+        opacity: 1;
+    }
+}
